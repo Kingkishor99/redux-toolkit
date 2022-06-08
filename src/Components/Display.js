@@ -14,10 +14,15 @@ function Display() {
 
   return (
     <div>
-      {useSelector((state) => state.co.value)}
+      <div style={{ backgroundColor: "green", display: "inline-block" }}>
+        {useSelector((state) => state.co.value)}
+      </div>
+
       <br />
       <br />
-      {useSelector((state) => state.co.aa)}
+      <div style={{ backgroundColor: "yellow", display: "inline-block" }}>
+        {useSelector((state) => state.co.aa)}
+      </div>
       <br />
       <br />
       <input
