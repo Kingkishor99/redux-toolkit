@@ -7,8 +7,8 @@ import { add, reset, substract } from "./Toolkit/Reducers";
 function App() {
   const dispatch = useDispatch();
   const Increase = (e) => {
-    console.log("add");
     dispatch(add());
+    console.log("add");
   };
   const Decrease = (e) => {
     dispatch(substract());
@@ -21,6 +21,9 @@ function App() {
 
   return (
     <div>
+      {useSelector((state) => state.co.aa)}
+      <br />
+      <br />
       <button onClick={(e) => Increase(e)}>add</button>
       <br />
       <br />
